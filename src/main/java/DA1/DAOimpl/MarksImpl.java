@@ -5,6 +5,7 @@
 package DA1.DAOimpl;
 
 import DA1.Entity.Marks;
+import DA1.Entity.SubjectTitle;
 import DA1.Entity.Subjects;
 import DA1.util.XJdbc;
 import DA1.util.XQuery;
@@ -20,6 +21,10 @@ public class MarksImpl {
     String updateMarks = "UPDATE Marks SET RegularGrade = ?, MidtermGrade = ?, FinalExam = ?"
             + " WHERE Student_ID = ? and Subject = ?";
     String findMarks = "SELECT * FROM Marks WHERE Student LIKE ?";
+    String insert ="INSERT INTO Marks (Student_ID, Student, Subject)\n" +
+            "values(?,?,?)";
+    String getAllSubjectTitle = "SELECT Distinct Subject as 'subject'  from Marks";
+    String getMarksBySubjecTitle = "SELECT * FROM Marks WHERE Subject = ?";
     String deleteMarks = "UPDATE Marks set RegularGrade = null, MidtermGrade = null, FinalExam = null WHERE Student_ID = ? and Subject = ?";
     
     public List<Marks> findAll(){
@@ -28,6 +33,10 @@ public class MarksImpl {
     
     public List<Subjects> findAllSubjects(){
         return XQuery.getBeanList(Subjects.class, findAllSubject);
+    }
+    
+      public List<Marks> findAllBySubjectsTitle(String subjectTitle){
+        return XQuery.getBeanList(Marks.class, getMarksBySubjecTitle, subjectTitle);
     }
     
     public void update(Marks m){
@@ -40,9 +49,24 @@ public class MarksImpl {
         };
         XJdbc.executeUpdate(updateMarks, values);
     }
+
+    public void insert(Marks m){
+        Object[] values = {
+                m.getStudent_ID(),
+                m.getStudent(),
+                m.getSubject()
+        };
+        System.out.println("sss"+values.toString());
+        XJdbc.executeUpdate(insert, values);
+    }
     public List<Marks> findMarks(String name){
         return XQuery.getBeanList(Marks.class, findMarks, "%"+ name);
     }
+    
+     public List<SubjectTitle> getAllSubjectTitle(){
+        return XQuery.getBeanList(SubjectTitle.class, getAllSubjectTitle);
+    }
+    
     public void deleteMarks(Marks m){
         Object[] values = {
             m.getStudent_ID(),

@@ -2,8 +2,10 @@ DA1\Entity\Students$StudentsBuilder.class
 DuAn1\ui\UsersManagerJDialog$3.class
 DuAn1\ui\ManagerApp_AD$18.class
 DuAn1\ui\ManagerApp_AD$38.class
+DuAn1\ui\ManagerApp_AD$58.class
 DuAn1\ui\MarksJDialog$7.class
 DuAn1\ui\ManagerApp_AD$25.class
+DuAn1\ui\SelectStudent$1.class
 DuAn1\ui\ManagerApp_AD$45.class
 DA1\Entity\Students.class
 DuAn1\ui\ManagerApp_AD$12.class
@@ -25,12 +27,15 @@ Controllers\LoginController.class
 DuAn1\ui\UsersManagerJDialog$8.class
 DuAn1\ui\SignUp$6.class
 DA1\Entity\Teachers$TeachersBuilder.class
+DuAn1\ui\SelectStudent$2.class
 DuAn1\ui\StudentsJDialog$9$1.class
 DuAn1\ui\ManagerApp_AD$17.class
 DuAn1\ui\MarksJDialog$6.class
 DuAn1\ui\UsersManagerJDialog$2.class
 DuAn1\ui\WelcomeJDialog$1.class
+DuAn1\ui\ManagerApp_AD$57.class
 DuAn1\ui\UsersManagerJDialog$10$1.class
+DuAn1\ui\SelectStudent$4$1.class
 DuAn1\ui\ManagerApp_AD$52.class
 Controllers\UserManagerController.class
 DuAn1\ui\TeachersJDialog$6.class
@@ -60,6 +65,7 @@ DuAn1\ui\ManagerApp_AD$44.class
 DuAn1\ui\StudentsJDialog.class
 DuAn1\ui\WelcomeJDialog$3$1.class
 DuAn1\ui\MarksJDialog$8.class
+DuAn1\ui\SelectStudent.class
 DuAn1\ui\ClassList$2.class
 DuAn1\ui\SubjectsJDialog$2.class
 DA1\Entity\Marks$MarksBuilder.class
@@ -72,6 +78,7 @@ DuAn1\ui\ManagerApp_AD$16.class
 DuAn1\ui\ManagerApp_AD$36.class
 DuAn1\ui\WelcomeJDialog$2.class
 DuAn1\ui\ManagerApp_AD$13.class
+DA1\Entity\SubjectTitle.class
 DA1\Entity\Subjects.class
 DuAn1\ui\MarksJDialog$9.class
 DuAn1\ui\WelcomeJDialog.class
@@ -105,6 +112,8 @@ DA1\Entity\sendMessage$sendMessageBuilder.class
 DuAn1\ui\ManagerApp_AD$15.class
 DuAn1\ui\ManagerApp_AD$35.class
 DA1\DAOimpl\StudentsImpl.class
+DuAn1\ui\SelectStudent$4.class
+DA1\Entity\StudentSelectMark$StudentSelectMarkBuilder.class
 DuAn1\ui\ManagerApp_AD$42.class
 DuAn1\ui\ManagerApp_AD$22.class
 DuAn1\ui\LoginJDialog$1.class
@@ -127,8 +136,10 @@ DuAn1\ui\ManagerApp_AD$29.class
 DuAn1\ui\ManagerApp_AD$34.class
 DuAn1\ui\StudentsJDialog$5.class
 DuAn1\ui\ManagerApp_AD$6.class
+DuAn1\ui\SelectStudent$3.class
 DuAn1\ui\LoginJDialog$2.class
 DuAn1\ui\SignUp$4.class
+DA1\Entity\StudentSelectMark.class
 DuAn1\ui\SubjectsJDialog.class
 DuAn1\ui\TeachersJDialog$5.class
 DuAn1\ui\ManagerApp_AD$11.class
@@ -164,6 +175,7 @@ DuAn1\ui\TeachersJDialog$3.class
 com\mycompany\duan1\DuAn1.class
 DA1\DAOimpl\SubjectsImpl.class
 DuAn1\ui\ManagerApp_AD$27.class
+DA1\Entity\SubjectTitle$SubjectTitleBuilder.class
 DuAn1\ui\ManagerApp_AD$32.class
 DA1\DAOimpl\UsersDAOimpl.class
 DuAn1\ui\StudentsJDialog$9.class

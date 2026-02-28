@@ -23,9 +23,11 @@ import javax.swing.border.MatteBorder;
  */
 public class FormatList extends DefaultListCellRenderer {
     private final Map<String, Icon> iconMap;
+    private int fontSize;
 
-    public FormatList(Map<String, Icon> iconMap) {
+    public FormatList(Map<String, Icon> iconMap, int fontSize) {
         this.iconMap = iconMap;
+        this.fontSize = fontSize;
     }
 
     @Override
@@ -42,7 +44,7 @@ public class FormatList extends DefaultListCellRenderer {
 
         // Style: center text, font, màu pastel
         label.setHorizontalAlignment(SwingConstants.LEFT);
-        label.setFont(new Font("Segoe UI", Font.BOLD, 15));
+        label.setFont(new Font("Segoe UI", Font.BOLD, fontSize));
         label.setForeground(isSelected ? new Color(255, 255, 255) : new Color(102, 102, 255));
         label.setBackground(isSelected ? new Color(102, 102, 255) : new Color(250, 250, 240));
         label.setOpaque(true);

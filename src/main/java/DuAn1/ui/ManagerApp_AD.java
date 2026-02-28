@@ -26,6 +26,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import javax.swing.DefaultListModel;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -53,6 +54,7 @@ public class ManagerApp_AD extends javax.swing.JFrame {
     List<Marks> itemsMa = List.of();
     List<Subjects> itemsSu = List.of();
     SubjectsImpl daoSu = new SubjectsImpl() ;
+    List<String> subjectTitles = List.of();
     
     UsersManagerJDialog UMJ = new UsersManagerJDialog(this, rootPaneCheckingEnabled);
     SubjectsJDialog SJ = new SubjectsJDialog(this, rootPaneCheckingEnabled);
@@ -62,7 +64,10 @@ public class ManagerApp_AD extends javax.swing.JFrame {
     MarksJDialog MJJ = new MarksJDialog(this, rootPaneCheckingEnabled);
     UploadExcelData ULED = new UploadExcelData();
     ClassList cl = new ClassList(this, rootPaneCheckingEnabled);
-
+    SelectStudent SS = new SelectStudent(this, rootPaneCheckingEnabled);
+    
+    //const
+    private final String ALL_SUBJECT ="Tất cả các môn";
     /**
      * Creates new form ManagerApp_AD1
      */
@@ -104,7 +109,8 @@ public class ManagerApp_AD extends javax.swing.JFrame {
         iconMap.put("Quản lý khoa", new ImageIcon(FormatList.class.getResource("/images/subjects.png")));
         iconMap.put("Quản lý chuyên ngành", new ImageIcon(FormatList.class.getResource("/images/subjects.png")));
         iconMap.put("Quản lý lớp học", new ImageIcon(FormatList.class.getResource("/images/Class.png")));
-        managerList.setCellRenderer(new FormatList(iconMap));
+        managerList.setCellRenderer(new FormatList(iconMap, 15));
+        jListSubjectTitles.setCellRenderer(new FormatList(iconMap, 13));
     }
 
     public void open() {
@@ -133,6 +139,7 @@ public class ManagerApp_AD extends javax.swing.JFrame {
         CJ.fillToTable(tblClass);
         MJJ.fillToTable(tblMarks);
         MJJ.fillToTable(tblExport);
+        fillSubjectTitle();
 
         lblName.setText(user.getFullname());
         FormatTable.RendererColumn(tblUsers, 0);
@@ -341,6 +348,18 @@ public class ManagerApp_AD extends javax.swing.JFrame {
              
          }
     }
+     
+    public void fillSubjectTitle(){
+        subjectTitles = daoMa.getAllSubjectTitle().stream().map(i->i.getSubject()).toList();
+        DefaultListModel<String> defaultListModel = new DefaultListModel<>();
+        subjectTitles.forEach(title -> defaultListModel.addElement(title));
+        defaultListModel.addElement(ALL_SUBJECT);
+        jListSubjectTitles.removeAll();
+        jListSubjectTitles.setModel(defaultListModel);
+        jListSubjectTitles.setSelectedIndex(subjectTitles.size());
+        btnAddStudent.setEnabled(false);
+    }
+     
      private JTable targetTableClassList;
     public void setTargetTableClassList(JTable tbl) {
         this.targetTableClassList = tbl;
@@ -384,6 +403,9 @@ public class ManagerApp_AD extends javax.swing.JFrame {
         txtFindMarks = new javax.swing.JTextField();
         btnFindMarks = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jListSubjectTitles = new javax.swing.JList<>();
+        btnAddStudent = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
         tblTeachers = new javax.swing.JTable();
@@ -730,11 +752,27 @@ public class ManagerApp_AD extends javax.swing.JFrame {
 
         jSeparator2.setForeground(new java.awt.Color(153, 153, 153));
 
+        jListSubjectTitles.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jListSubjectTitles.setForeground(new java.awt.Color(153, 0, 255));
+        jListSubjectTitles.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        jListSubjectTitles.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jListSubjectTitlesMouseClicked(evt);
+            }
+        });
+        jScrollPane5.setViewportView(jListSubjectTitles);
+
+        btnAddStudent.setText("Thêm học sinh");
+        btnAddStudent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddStudentActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -742,37 +780,54 @@ public class ManagerApp_AD extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(btnDeleteMarks)
-                        .addGap(319, 319, 319)
+                        .addGap(205, 205, 205)
                         .addComponent(btnReloadMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtFindMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnFindMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
                         .addComponent(btnSelectMarks)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnUnSelectMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(btnAddStudent)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jScrollPane3)))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 597, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnAddStudent, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnReloadMarks, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnUnSelectMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSelectMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtFindMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(btnDeleteMarks, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(btnFindMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 5, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(btnUnSelectMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnSelectMarks, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnReloadMarks, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtFindMarks, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnFindMarks, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
 
@@ -1582,6 +1637,7 @@ public class ManagerApp_AD extends javax.swing.JFrame {
         // TODO add your handling code here:
         MJJ.fillToTable(tblMarks);
         txtFindMarks.setText("");
+        jListSubjectTitles.setSelectedIndex(subjectTitles.size());
     }//GEN-LAST:event_btnReloadMarksActionPerformed
 
     private void txtFindMarksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFindMarksActionPerformed
@@ -1789,6 +1845,7 @@ public class ManagerApp_AD extends javax.swing.JFrame {
         // TODO add your handling code here:
         MJJ.deleteMarks(tblMarks);
         MJJ.fillToTable(tblMarks);
+        jListSubjectTitles.setSelectedIndex(subjectTitles.size());
     }//GEN-LAST:event_btnDeleteMarksActionPerformed
 
     private void btnFindExActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindExActionPerformed
@@ -1857,6 +1914,31 @@ public class ManagerApp_AD extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnFirstActionPerformed
 
+    private void jListSubjectTitlesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jListSubjectTitlesMouseClicked
+        String valueSeleted = jListSubjectTitles.getSelectedValue();
+        if (valueSeleted.equals(ALL_SUBJECT)) {
+            DefaultTableModel model = (DefaultTableModel) tblMarks.getModel();
+            model.setRowCount(0);
+            MJJ.fillToTable(tblMarks);
+
+            btnAddStudent.setEnabled(false);
+            return;
+        }
+        btnAddStudent.setEnabled(true);
+        itemsMa = daoMa.findAllBySubjectsTitle(valueSeleted);
+        DefaultTableModel model = (DefaultTableModel) tblMarks.getModel();
+        model.setRowCount(0);
+        MJJ.fillToTableWithValue(tblMarks, itemsMa);
+    }//GEN-LAST:event_jListSubjectTitlesMouseClicked
+
+    private void btnAddStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddStudentActionPerformed
+        // TODO add your handling code here:
+        List<Marks> marks = daoMa.findAllBySubjectsTitle(jListSubjectTitles.getSelectedValue());
+        List<Integer> ids = marks.stream().map(i->i.getStudent_ID()).toList();
+        SS.fillToTable(ids, jListSubjectTitles.getSelectedValue());
+        SS.setVisible(true);
+    }//GEN-LAST:event_btnAddStudentActionPerformed
+
     /**
      * @param args the command line arguments 
      */
@@ -1868,6 +1950,7 @@ public class ManagerApp_AD extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAddStudent;
     private javax.swing.JButton btnCreate;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnDeleteMarks;
@@ -1912,6 +1995,7 @@ public class ManagerApp_AD extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JList<String> jListSubjectTitles;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -1927,6 +2011,7 @@ public class ManagerApp_AD extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;

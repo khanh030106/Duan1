@@ -90,7 +90,7 @@ public class MarksJDialog extends javax.swing.JDialog {
             } catch (Exception e) {
             }
         }
-
+        fillToTable(targetTableMarks);
     }
     
     // Trả về true nếu dữ liệu hợp lệ, false nếu sai
@@ -150,7 +150,7 @@ public boolean checkMarks(JTextField txtRegular, JTextField txtMidterm, JTextFie
 
     public void setEditable(boolean e) {
         txtIDSt.setEnabled(false);
-        cboSubjects.setEnabled(false);
+        cboSubjects.setEnabled(true);
         txtStName.setEnabled(false);
     }
 
@@ -171,6 +171,37 @@ public boolean checkMarks(JTextField txtRegular, JTextField txtMidterm, JTextFie
         symbols.setDecimalSeparator(',');
         DecimalFormat df = new DecimalFormat("0.0", symbols);
         items.forEach(e -> {
+            Double rg = e.getRegularGrade();
+            Double mg = e.getMidtermGrade();
+            Double fe = e.getFinalExam();
+            Double avg = null;
+
+            if (rg != null && mg != null && fe != null) {
+                avg = (rg + mg + fe) / 3.0;
+                e.setAverage(avg);
+            }
+            e.setAverage(avg);
+            Object[] rowData = {
+                e.getStudent_ID(),
+                e.getStudent(),
+                e.getSubject(),
+                rg != null ? rg : null,
+                mg != null ? mg : null,
+                fe != null ? fe : null,
+                avg != null ? df.format(avg) : null,
+                false
+            };
+            model.addRow(rowData);
+        });
+    }
+    
+     public void fillToTableWithValue(JTable tbl, List<Marks> marks) {
+        DefaultTableModel model = (DefaultTableModel) tbl.getModel();
+        model.setRowCount(0);
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.getDefault());
+        symbols.setDecimalSeparator(',');
+        DecimalFormat df = new DecimalFormat("0.0", symbols);
+        marks.forEach(e -> {
             Double rg = e.getRegularGrade();
             Double mg = e.getMidtermGrade();
             Double fe = e.getFinalExam();

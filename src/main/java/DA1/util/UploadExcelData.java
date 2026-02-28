@@ -51,7 +51,6 @@ public class UploadExcelData {
         fileChooser.setDialogTitle("Chọn file");
         int result = fileChooser.showOpenDialog(null);
         if (result != JFileChooser.APPROVE_OPTION) {
-     
             return;
         }
         File file = fileChooser.getSelectedFile();

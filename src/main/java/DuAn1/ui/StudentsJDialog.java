@@ -28,6 +28,7 @@ public class StudentsJDialog extends javax.swing.JDialog {
     StudentsImpl dao = new StudentsImpl() ;
     UsersDAOimpl daoU = new UsersDAOimpl();
     List<Users> itemsU = List.of();
+    UsersManagerJDialog UMJ = new UsersManagerJDialog(null, rootPaneCheckingEnabled);
     /**
      * Creates new form StudentsJDialog
      */
@@ -40,16 +41,16 @@ public class StudentsJDialog extends javax.swing.JDialog {
     public void fillToTable(JTable tbl){
         DefaultTableModel model = (DefaultTableModel) tbl.getModel();
         model.setRowCount(0);
-        
         items= dao.findAll();
         items.forEach(e ->{
+            String date = XDate.format(e.getBirthDate(), XDate.SHORT_PATERN);
             Object[] rowData = {
                 e.getStudents_ID(),
                 e.getUser_ID(),
                 e.getFullname(),
                 e.getPhoto(),
                 e.getUserName(),
-                e.getBirthDate(),
+                date,
                 e.getGmail(),
                 e.getClasses(),
                 false
@@ -88,7 +89,7 @@ public class StudentsJDialog extends javax.swing.JDialog {
         if(txtBirth.getText().isEmpty() || txtGmail.getText().isEmpty() || cboClass.getSelectedItem() == null){
             XDialog.alert("Hãy nhập đầy đủ thông tin");
             return;
-        }else {
+        }else if(UMJ.isValidEmail(txtGmail.getText())){
             try {
                 Students std = this.getForm();
                 dao.create(std);
@@ -96,6 +97,9 @@ public class StudentsJDialog extends javax.swing.JDialog {
             } catch (Exception e) {
                 XDialog.alert("lỖI: "+e);
             }
+        }else{
+            XDialog.alert("Email không hợp lệ");
+            return;
         }
     }
     

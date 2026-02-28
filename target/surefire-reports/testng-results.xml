@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="33" passed="33" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-28T23:17:27 ICT" name="Surefire suite" finished-at="2026-02-28T23:17:27 ICT" duration-ms="811">
+    <groups>
+    </groups>
+    <test started-at="2026-02-28T23:17:27 ICT" name="Surefire test" finished-at="2026-02-28T23:17:27 ICT" duration-ms="811">
+      <class name="DA1.DAOimpl.TeachersImplTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC20_TeachersImpl_create_valid()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="TC20_TeachersImpl_create_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC20_TeachersImpl_create_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC21_TeachersImpl_update_valid()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="TC21_TeachersImpl_update_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC21_TeachersImpl_update_valid -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC22_TeachersImpl_deleteById_valid()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="TC22_TeachersImpl_deleteById_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC22_TeachersImpl_deleteById_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC23_TeachersImpl_findAll_basic()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="TC23_TeachersImpl_findAll_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC23_TeachersImpl_findAll_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC24_TeachersImpl_findByName_partial()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="TC24_TeachersImpl_findByName_partial" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC24_TeachersImpl_findByName_partial -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC25_TeachersImpl_fillToTeacher_basic()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="TC25_TeachersImpl_fillToTeacher_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC25_TeachersImpl_fillToTeacher_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.TeachersImplTest@96def03]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DA1.DAOimpl.TeachersImplTest -->
+      <class name="DA1.DAOimpl.StudentsImplTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC08_StudentsImpl_create_valid()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="TC08_StudentsImpl_create_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC08_StudentsImpl_create_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC09_StudentsImpl_update_valid()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="TC09_StudentsImpl_update_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC09_StudentsImpl_update_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC10_StudentsImpl_findAll_basic()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="TC10_StudentsImpl_findAll_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10_StudentsImpl_findAll_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC11_StudentsImpl_findAllStudentForSelectMark_basic()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="TC11_StudentsImpl_findAllStudentForSelectMark_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11_StudentsImpl_findAllStudentForSelectMark_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC12_StudentsImpl_findByName_partial()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="TC12_StudentsImpl_findByName_partial" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC12_StudentsImpl_findByName_partial -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC13_StudentsImpl_deleteStById_valid()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="TC13_StudentsImpl_deleteStById_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC13_StudentsImpl_deleteStById_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC14_StudentsImpl_classList_valid()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="TC14_StudentsImpl_classList_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14_StudentsImpl_classList_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.StudentsImplTest@1f0f1111]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DA1.DAOimpl.StudentsImplTest -->
+      <class name="DA1.DAOimpl.MarksImplTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC26_MarksImpl_findAll_basic()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC26_MarksImpl_findAll_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC26_MarksImpl_findAll_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC27_MarksImpl_findAllSubjects_basic()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC27_MarksImpl_findAllSubjects_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC27_MarksImpl_findAllSubjects_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC28_MarksImpl_findAllBySubjectsTitle_valid()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC28_MarksImpl_findAllBySubjectsTitle_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC28_MarksImpl_findAllBySubjectsTitle_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC29_MarksImpl_update_valid()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC29_MarksImpl_update_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC29_MarksImpl_update_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC30_MarksImpl_insert_valid()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC30_MarksImpl_insert_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC30_MarksImpl_insert_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC31_MarksImpl_findMarks_partial()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC31_MarksImpl_findMarks_partial" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC31_MarksImpl_findMarks_partial -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC32_MarksImpl_getAllSubjectTitle_basic()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC32_MarksImpl_getAllSubjectTitle_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC32_MarksImpl_getAllSubjectTitle_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC33_MarksImpl_deleteMarks_valid()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="TC33_MarksImpl_deleteMarks_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC33_MarksImpl_deleteMarks_valid -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.MarksImplTest@14d3bc22]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DA1.DAOimpl.MarksImplTest -->
+      <class name="DA1.DAOimpl.SubjectsImplTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC15_SubjectsImpl_findAll_basic()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="TC15_SubjectsImpl_findAll_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC15_SubjectsImpl_findAll_basic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC16_SubjectsImpl_create_valid()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="TC16_SubjectsImpl_create_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16_SubjectsImpl_create_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC17_SubjectsImpl_update_valid()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="TC17_SubjectsImpl_update_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC17_SubjectsImpl_update_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_SubjectsImpl_delete_valid()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="TC18_SubjectsImpl_delete_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_SubjectsImpl_delete_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC19_SubjectsImpl_findByName_partial()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="TC19_SubjectsImpl_findByName_partial" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC19_SubjectsImpl_findByName_partial -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.SubjectsImplTest@56528192]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DA1.DAOimpl.SubjectsImplTest -->
+      <class name="DA1.DAOimpl.UsersDAOimplTest">
+        <test-method signature="TC01_UsersDAOimpl_create_valid()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="TC01_UsersDAOimpl_create_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_UsersDAOimpl_create_valid -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC02_UsersDAOimpl_update_valid()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="TC02_UsersDAOimpl_update_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_UsersDAOimpl_update_valid -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC03_UsersDAOimpl_deleteById_valid()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="TC03_UsersDAOimpl_deleteById_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_UsersDAOimpl_deleteById_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC04_UsersDAOimpl_deleteByIdInt_valid()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="TC04_UsersDAOimpl_deleteByIdInt_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_UsersDAOimpl_deleteByIdInt_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC05_UsersDAOimpl_findAll_basic()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="TC05_UsersDAOimpl_findAll_basic" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_UsersDAOimpl_findAll_basic -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC06_UsersDAOimpl_findById_valid()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="TC06_UsersDAOimpl_findById_valid" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_UsersDAOimpl_findById_valid -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="setUp" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC07_UsersDAOimpl_findByName_partial()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="TC07_UsersDAOimpl_findByName_partial" finished-at="2026-02-28T23:17:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_UsersDAOimpl_findByName_partial -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DA1.DAOimpl.UsersDAOimplTest@5ccddd20]" started-at="2026-02-28T23:17:27 ICT" name="tearDown" finished-at="2026-02-28T23:17:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DA1.DAOimpl.UsersDAOimplTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

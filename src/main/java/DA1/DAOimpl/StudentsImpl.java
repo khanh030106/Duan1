@@ -4,10 +4,12 @@
  */
 package DA1.DAOimpl;
 
+import DA1.Entity.StudentSelectMark;
 import DA1.Entity.Students;
 import DA1.util.XJdbc;
 import DA1.util.XQuery;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -20,6 +22,7 @@ public class StudentsImpl {
     String updateSQL = "  UPDATE Students SET BirthDate = ?, Gmail = ?, Classes = ? WHERE Students_ID = ?";
     String findStudent = "SELECT * FROM Students WHERE Fullname like ?";
     String deleteStudent = "DELETE FROM Students WHERE Students_ID = ?";
+    String selectStudentNotInCurrentSubject = "SELECT * from Students where Students_ID not in(%s)";
     String StudentList = "  SELECT Students_ID, Fullname, BirthDate, Gmail, Classes FROM Students WHERE Classes = ?";
     
     public Students create(Students en){
@@ -35,6 +38,7 @@ public class StudentsImpl {
         return en;
     }
     
+    
     public void update(Students std){
         Object[] values = {
             std.getBirthDate(),
@@ -48,6 +52,15 @@ public class StudentsImpl {
     public List<Students> findAll(){
         return XQuery.getBeanList(Students.class, findAllSQL);
     }
+    
+     public List<Students> findAllStudentForSelectMark(List<Integer> subjectIds){
+         String result = subjectIds.stream()
+                 .map(String::valueOf)   // chuyển Integer -> String
+                 .collect(Collectors.joining(","));
+         String sqlInsertNew = String.format(selectStudentNotInCurrentSubject, result);
+        return XQuery.getBeanList(Students.class, sqlInsertNew);
+    }
+    
     
     public List<Students> findByName(String name){
         return XQuery.getBeanList(Students.class, findStudent, "%"+name);

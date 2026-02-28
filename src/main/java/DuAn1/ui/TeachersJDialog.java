@@ -11,6 +11,7 @@ import DA1.Entity.Teachers;
 import DA1.util.XDate;
 import DA1.util.XDialog;
 import DA1.util.XImage;
+import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
@@ -63,10 +64,19 @@ public class TeachersJDialog extends javax.swing.JDialog {
     }
     
     public void create() {
+        
         if (txtTe_ID.getText().isEmpty() || txtUser_ID.getText().isEmpty() || txtName.getText().isEmpty() || txtDate.getText().isEmpty() || txtMail.getText().isEmpty()) {
             XDialog.alert("Hãy nhập đầy đủ thông tin");
             return;
-        } else {
+        } else if(!UMJ.isValidEmail(String.valueOf(txtMail.getText()))) {
+            
+            XDialog.alert("email không hợp lệ ");
+            return;
+        }else if(!UMJ.isValidDate(String.valueOf(txtDate.getText()))){
+            XDialog.alert("Ngày tháng không hợp lệ\n"
+                    + "     Cú pháp: dd/MM/yyyy ");
+            return;
+        }else{
             try {
                 Teachers te = this.getForm();
                 dao.create(te);
@@ -74,14 +84,14 @@ public class TeachersJDialog extends javax.swing.JDialog {
             } catch (Exception e) {
                 XDialog.alert("Lỗi");
             }
-            
         }
         this.dispose();
-        
+        fillToTable(targetTableTeachers); 
     }
     
     public void update() {
         Teachers en = this.getForm();
+        if(UMJ.isValidEmail(String.valueOf(txtMail.getText()))) {
         try {
             dao.update(en);
             JOptionPane.showMessageDialog(this, "Cập nhật thành công");
@@ -90,6 +100,10 @@ public class TeachersJDialog extends javax.swing.JDialog {
             this.fillToTable(targetTableTeachers);
         } catch (Exception e) {
             System.out.println(e);
+        }
+    }else{
+        XDialog.alert("Email không hợp lệ");
+        return;
         }
     }
     
@@ -494,12 +508,13 @@ public class TeachersJDialog extends javax.swing.JDialog {
         model.setRowCount(0);
         items = dao.findAll();
         items.forEach(e -> {
+            String date = XDate.format(e.getBirthdate(), XDate.SHORT_PATERN);
             Object[] rowData = {
                 e.getID_GV(),
                 e.getUser_ID(),
                 e.getName(),
                 e.getPhoto(),
-                e.getBirthdate(),
+                date, 
                 e.getGmail(),
                 e.getSubjects(),
                 false

@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class XDate {
     public static final String FULL_PATERN = "HH:mm:ss dd/MM/yyyy";
-    public static final String SHORT_PATERN = "yyyy-MM-dd"; 
+    public static final String SHORT_PATERN = "dd/MM/yyyy"; 
     
     public static final SimpleDateFormat formater = new SimpleDateFormat();
     

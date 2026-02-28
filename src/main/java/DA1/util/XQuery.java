@@ -59,6 +59,7 @@ private static <B> B ReadBean(ResultSet resultSet, Class<B> beanClass) {
                 list.add(XQuery.ReadBean(resultSet, beaClass));
             }
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
         return list;
