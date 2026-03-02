@@ -4,7 +4,7 @@
  */
 package DuAn1.ui;
 
-import DA1.DAOimpl.MarksImpl;
+import DA1.DAOimplTest.MarksImpl;
 import DA1.Entity.Marks;
 import DA1.Entity.Subjects;
 import java.io.FileOutputStream;

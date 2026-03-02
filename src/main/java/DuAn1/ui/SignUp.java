@@ -4,8 +4,8 @@
  */
 package DuAn1.ui;
 
-import DA1.DAOimpl.ClassImpl;
-import DA1.DAOimpl.SendMessageImpl;
+import DA1.DAOimplTest.ClassImpl;
+import DA1.DAOimplTest.SendMessageImpl;
 import DA1.Entity.Classes;
 import DA1.Entity.sendMessage;
 import DA1.util.XDate;

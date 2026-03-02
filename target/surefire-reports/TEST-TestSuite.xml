@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="1.221" tests="33" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="2.255" tests="33" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\ADMIN\AppData\Local\Temp\surefire13621165136700971922\surefirebooter-20260228231726483_3.jar C:\Users\ADMIN\AppData\Local\Temp\surefire13621165136700971922 2026-02-28T23-17-26_345-jvmRun1 surefire-20260228231726483_1tmp surefire_0-20260228231726483_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ADMIN\AppData\Local\Temp\surefire10704770281207659540\surefirebooter-20260302143308930_3.jar C:\Users\ADMIN\AppData\Local\Temp\surefire10704770281207659540 2026-03-02T14-33-08_670-jvmRun1 surefire-20260302143308930_1tmp surefire_0-20260302143308930_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ADMIN\PhạmGiaKhanh-Assignment-Advance_Testing\DuAn1\target\test-classes;C:\Users\ADMIN\PhạmGiaKhanh-Assignment-Advance_Testing\DuAn1\target\classes;C:\Users\ADMIN\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\12.10.0.jre11\mssql-jdbc-12.10.0.jre11.jar;C:\Users\ADMIN\.m2\repository\org\projectlombok\lombok\1.18.38\lombok-1.18.38.jar;C:\Users\ADMIN\.m2\repository\com\formdev\flatlaf\3.4\flatlaf-3.4.jar;C:\Users\ADMIN\.m2\repository\com\formdev\flatlaf-extras\3.4\flatlaf-extras-3.4.jar;C:\Users\ADMIN\.m2\repository\com\github\weisj\jsvg\1.2.0\jsvg-1.2.0.jar;C:\Users\ADMIN\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\ADMIN\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\ADMIN\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\ADMIN\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ADMIN\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\ADMIN\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\ADMIN\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\ADMIN\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\ADMIN\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\ADMIN\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\ADMIN\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\ADMIN\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar;C:\Users\ADMIN\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar;C:\Users\ADMIN\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.0\log4j-api-2.22.0.jar;C:\Users\ADMIN\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.0\log4j-core-2.22.0.jar;C:\Users\ADMIN\.m2\repository\org\netbeans\external\AbsoluteLayout\RELEASE250\AbsoluteLayout-RELEASE250.jar;C:\Users\ADMIN\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\ADMIN\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ADMIN\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ADMIN\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ADMIN\AppData\Local\Temp\surefire13621165136700971922\surefirebooter-20260228231726483_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADMIN\AppData\Local\Temp\surefire10704770281207659540\surefirebooter-20260302143308930_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -59,9 +59,8 @@
     <property name="java.vm.version" value="21.0.7+8-LTS-245"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
-    <property name="skiptest" value="true"/>
   </properties>
-  <testcase name="TC26_MarksImpl_findAll_basic" classname="DA1.DAOimpl.MarksImplTest" time="0.042">
+  <testcase name="TC26_MarksImpl_findAll_basic" classname="DA1.DAOimplTest.MarksImplTest" time="0.062">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
@@ -69,17 +68,17 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="TC27_MarksImpl_findAllSubjects_basic" classname="DA1.DAOimpl.MarksImplTest" time="0.004">
+  <testcase name="TC27_MarksImpl_findAllSubjects_basic" classname="DA1.DAOimplTest.MarksImplTest" time="0.0">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC28_MarksImpl_findAllBySubjectsTitle_valid" classname="DA1.DAOimpl.MarksImplTest" time="0.001">
+  <testcase name="TC28_MarksImpl_findAllBySubjectsTitle_valid" classname="DA1.DAOimplTest.MarksImplTest" time="0.012">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC29_MarksImpl_update_valid" classname="DA1.DAOimpl.MarksImplTest" time="0.01">
+  <testcase name="TC29_MarksImpl_update_valid" classname="DA1.DAOimplTest.MarksImplTest" time="0.007">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 sss[Ljava.lang.Object;@7c8c9a05
@@ -88,7 +87,7 @@ values(?,?,?)
 value: UPDATE Marks SET RegularGrade = ?, MidtermGrade = ?, FinalExam = ? WHERE Student_ID = ? and Subject = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC30_MarksImpl_insert_valid" classname="DA1.DAOimpl.MarksImplTest" time="0.005">
+  <testcase name="TC30_MarksImpl_insert_valid" classname="DA1.DAOimplTest.MarksImplTest" time="0.006">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 sss[Ljava.lang.Object;@78d6692f
@@ -96,17 +95,17 @@ value: INSERT INTO Marks (Student_ID, Student, Subject)
 values(?,?,?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC31_MarksImpl_findMarks_partial" classname="DA1.DAOimpl.MarksImplTest" time="0.002">
+  <testcase name="TC31_MarksImpl_findMarks_partial" classname="DA1.DAOimplTest.MarksImplTest" time="0.003">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC32_MarksImpl_getAllSubjectTitle_basic" classname="DA1.DAOimpl.MarksImplTest" time="0.004">
+  <testcase name="TC32_MarksImpl_getAllSubjectTitle_basic" classname="DA1.DAOimplTest.MarksImplTest" time="0.01">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC33_MarksImpl_deleteMarks_valid" classname="DA1.DAOimpl.MarksImplTest" time="0.008">
+  <testcase name="TC33_MarksImpl_deleteMarks_valid" classname="DA1.DAOimplTest.MarksImplTest" time="0.01">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 sss[Ljava.lang.Object;@3daf7722
@@ -116,14 +115,14 @@ value: UPDATE Marks SET RegularGrade = ?, MidtermGrade = ?, FinalExam = ? WHERE 
 value: UPDATE Marks set RegularGrade = null, MidtermGrade = null, FinalExam = null WHERE Student_ID = ? and Subject = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC08_StudentsImpl_create_valid" classname="DA1.DAOimpl.StudentsImplTest" time="0.032">
+  <testcase name="TC08_StudentsImpl_create_valid" classname="DA1.DAOimplTest.StudentsImplTest" time="0.043">
     <system-out><![CDATA[value: DELETE FROM Marks WHERE Student_ID = ? AND Subject = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 value: INSERT INTO Students (User_ID, Fullname, Photo, BirthDate, Gmail, Classes) VALUES (?,?,?,?,?,?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC09_StudentsImpl_update_valid" classname="DA1.DAOimpl.StudentsImplTest" time="0.011">
+  <testcase name="TC09_StudentsImpl_update_valid" classname="DA1.DAOimplTest.StudentsImplTest" time="0.011">
     <system-out><![CDATA[value: DELETE FROM Students WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
@@ -132,7 +131,7 @@ value: INSERT INTO Students (User_ID, Fullname, Photo, BirthDate, Gmail, Classes
 value:   UPDATE Students SET BirthDate = ?, Gmail = ?, Classes = ? WHERE Students_ID = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC10_StudentsImpl_findAll_basic" classname="DA1.DAOimpl.StudentsImplTest" time="0.007">
+  <testcase name="TC10_StudentsImpl_findAll_basic" classname="DA1.DAOimplTest.StudentsImplTest" time="0.004">
     <system-out><![CDATA[value: DELETE FROM Students WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
@@ -142,21 +141,21 @@ value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) V
 ⚠ Column 'Students_ID' not found or incompatible!
 ]]></system-out>
   </testcase>
-  <testcase name="TC11_StudentsImpl_findAllStudentForSelectMark_basic" classname="DA1.DAOimpl.StudentsImplTest" time="0.003">
+  <testcase name="TC11_StudentsImpl_findAllStudentForSelectMark_basic" classname="DA1.DAOimplTest.StudentsImplTest" time="0.004">
     <system-out><![CDATA[value: DELETE FROM Students WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC12_StudentsImpl_findByName_partial" classname="DA1.DAOimpl.StudentsImplTest" time="0.0">
+  <testcase name="TC12_StudentsImpl_findByName_partial" classname="DA1.DAOimplTest.StudentsImplTest" time="0.0">
     <system-out><![CDATA[value: DELETE FROM Students WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC13_StudentsImpl_deleteStById_valid" classname="DA1.DAOimpl.StudentsImplTest" time="0.004">
+  <testcase name="TC13_StudentsImpl_deleteStById_valid" classname="DA1.DAOimplTest.StudentsImplTest" time="0.01">
     <system-out><![CDATA[value: DELETE FROM Students WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
@@ -165,26 +164,26 @@ value: INSERT INTO Students (User_ID, Fullname, Photo, BirthDate, Gmail, Classes
 value: DELETE FROM Students WHERE Students_ID = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC14_StudentsImpl_classList_valid" classname="DA1.DAOimpl.StudentsImplTest" time="0.001">
+  <testcase name="TC14_StudentsImpl_classList_valid" classname="DA1.DAOimplTest.StudentsImplTest" time="0.004">
     <system-out><![CDATA[value: DELETE FROM Students WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC15_SubjectsImpl_findAll_basic" classname="DA1.DAOimpl.SubjectsImplTest" time="0.001">
+  <testcase name="TC15_SubjectsImpl_findAll_basic" classname="DA1.DAOimplTest.SubjectsImplTest" time="0.003">
     <system-out><![CDATA[value: DELETE FROM Students WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM MonHoc WHERE TenMon = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC16_SubjectsImpl_create_valid" classname="DA1.DAOimpl.SubjectsImplTest" time="0.003">
+  <testcase name="TC16_SubjectsImpl_create_valid" classname="DA1.DAOimplTest.SubjectsImplTest" time="0.009">
     <system-out><![CDATA[value: DELETE FROM MonHoc WHERE TenMon = ?
 value: DELETE FROM MonHoc WHERE TenMon = ?
 value:   INSERT INTO MonHoc(TenMon, TinChi) VALUES(?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC17_SubjectsImpl_update_valid" classname="DA1.DAOimpl.SubjectsImplTest" time="0.004">
+  <testcase name="TC17_SubjectsImpl_update_valid" classname="DA1.DAOimplTest.SubjectsImplTest" time="0.009">
     <system-out><![CDATA[value: DELETE FROM MonHoc WHERE TenMon = ?
 value: DELETE FROM MonHoc WHERE TenMon = ?
 value: DELETE FROM MonHoc WHERE TenMon = ?
@@ -193,26 +192,26 @@ value: UPDATE MonHoc SET TenMon = ?, TinChi = ? WHERE MaMon = ?
 value: DELETE FROM MonHoc WHERE TenMon = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC18_SubjectsImpl_delete_valid" classname="DA1.DAOimpl.SubjectsImplTest" time="0.002">
+  <testcase name="TC18_SubjectsImpl_delete_valid" classname="DA1.DAOimplTest.SubjectsImplTest" time="0.004">
     <system-out><![CDATA[value: DELETE FROM MonHoc WHERE TenMon = ?
 value: DELETE FROM MonHoc WHERE TenMon = ?
 value:   INSERT INTO MonHoc(TenMon, TinChi) VALUES(?, ?)
 value: DELETE FROM MonHoc WHERE MaMon = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC19_SubjectsImpl_findByName_partial" classname="DA1.DAOimpl.SubjectsImplTest" time="0.001">
+  <testcase name="TC19_SubjectsImpl_findByName_partial" classname="DA1.DAOimplTest.SubjectsImplTest" time="0.002">
     <system-out><![CDATA[value: DELETE FROM MonHoc WHERE TenMon = ?
 value: DELETE FROM MonHoc WHERE TenMon = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC20_TeachersImpl_create_valid" classname="DA1.DAOimpl.TeachersImplTest" time="0.008">
+  <testcase name="TC20_TeachersImpl_create_valid" classname="DA1.DAOimplTest.TeachersImplTest" time="0.009">
     <system-out><![CDATA[value: DELETE FROM MonHoc WHERE TenMon = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 value: INSERT INTO Teachers (User_ID, Name, Photo, Birthdate, Gmail, Subjects) VALUES(?,?,?,?,?,?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC21_TeachersImpl_update_valid" classname="DA1.DAOimpl.TeachersImplTest" time="0.005">
+  <testcase name="TC21_TeachersImpl_update_valid" classname="DA1.DAOimplTest.TeachersImplTest" time="0.007">
     <system-out><![CDATA[value: DELETE FROM Teachers WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
@@ -221,7 +220,7 @@ value: INSERT INTO Teachers (User_ID, Name, Photo, Birthdate, Gmail, Subjects) V
 value: UPDATE Teachers SET Name =?, Photo = ?,Birthdate = ?, Gmail =?, Subjects =? WHERE User_ID =? 
 ]]></system-out>
   </testcase>
-  <testcase name="TC22_TeachersImpl_deleteById_valid" classname="DA1.DAOimpl.TeachersImplTest" time="0.002">
+  <testcase name="TC22_TeachersImpl_deleteById_valid" classname="DA1.DAOimplTest.TeachersImplTest" time="0.004">
     <system-out><![CDATA[value: DELETE FROM Teachers WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
@@ -230,7 +229,7 @@ value: INSERT INTO Teachers (User_ID, Name, Photo, Birthdate, Gmail, Subjects) V
 value: DELETE FROM Teachers WHERE ID_GV = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC23_TeachersImpl_findAll_basic" classname="DA1.DAOimpl.TeachersImplTest" time="0.003">
+  <testcase name="TC23_TeachersImpl_findAll_basic" classname="DA1.DAOimplTest.TeachersImplTest" time="0.008">
     <system-out><![CDATA[value: DELETE FROM Teachers WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
@@ -239,60 +238,60 @@ value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) V
 ⚠ Column 'ID_GV' not found or incompatible!
 ]]></system-out>
   </testcase>
-  <testcase name="TC24_TeachersImpl_findByName_partial" classname="DA1.DAOimpl.TeachersImplTest" time="0.0">
+  <testcase name="TC24_TeachersImpl_findByName_partial" classname="DA1.DAOimplTest.TeachersImplTest" time="0.0">
     <system-out><![CDATA[value: DELETE FROM Teachers WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC25_TeachersImpl_fillToTeacher_basic" classname="DA1.DAOimpl.TeachersImplTest" time="0.006">
+  <testcase name="TC25_TeachersImpl_fillToTeacher_basic" classname="DA1.DAOimplTest.TeachersImplTest" time="0.008">
     <system-out><![CDATA[value: DELETE FROM Teachers WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC01_UsersDAOimpl_create_valid" classname="DA1.DAOimpl.UsersDAOimplTest" time="0.001">
+  <testcase name="TC01_UsersDAOimpl_create_valid" classname="DA1.DAOimplTest.UsersDAOimplTest" time="0.006">
     <system-out><![CDATA[value: DELETE FROM Teachers WHERE User_ID = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC02_UsersDAOimpl_update_valid" classname="DA1.DAOimpl.UsersDAOimplTest" time="0.005">
+  <testcase name="TC02_UsersDAOimpl_update_valid" classname="DA1.DAOimplTest.UsersDAOimplTest" time="0.009">
     <system-out><![CDATA[value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 value:  UPDATE Users set UserName = ?, Fullname = ?,  PassWord = ? ,Photo = ?,  Role = ? , IsActive = ?  where User_ID = ? 
 ]]></system-out>
   </testcase>
-  <testcase name="TC03_UsersDAOimpl_deleteById_valid" classname="DA1.DAOimpl.UsersDAOimplTest" time="0.003">
+  <testcase name="TC03_UsersDAOimpl_deleteById_valid" classname="DA1.DAOimplTest.UsersDAOimplTest" time="0.003">
     <system-out><![CDATA[value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 value: DELETE FROM Users WHERE User_ID =?
 ]]></system-out>
   </testcase>
-  <testcase name="TC04_UsersDAOimpl_deleteByIdInt_valid" classname="DA1.DAOimpl.UsersDAOimplTest" time="0.003">
+  <testcase name="TC04_UsersDAOimpl_deleteByIdInt_valid" classname="DA1.DAOimplTest.UsersDAOimplTest" time="0.003">
     <system-out><![CDATA[value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 value: DELETE FROM Users WHERE User_ID =?
 ]]></system-out>
   </testcase>
-  <testcase name="TC05_UsersDAOimpl_findAll_basic" classname="DA1.DAOimpl.UsersDAOimplTest" time="0.002">
+  <testcase name="TC05_UsersDAOimpl_findAll_basic" classname="DA1.DAOimplTest.UsersDAOimplTest" time="0.0">
     <system-out><![CDATA[value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 ]]></system-out>
   </testcase>
-  <testcase name="TC06_UsersDAOimpl_findById_valid" classname="DA1.DAOimpl.UsersDAOimplTest" time="0.0">
+  <testcase name="TC06_UsersDAOimpl_findById_valid" classname="DA1.DAOimplTest.UsersDAOimplTest" time="0.0">
     <system-out><![CDATA[value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 value: INSERT INTO Users (UserName, Fullname, PassWord, Photo, Role, IsActive) VALUES  ( ? , ?, ?, ?, ?, ?)
 ]]></system-out>
   </testcase>
-  <testcase name="TC07_UsersDAOimpl_findByName_partial" classname="DA1.DAOimpl.UsersDAOimplTest" time="0.0">
+  <testcase name="TC07_UsersDAOimpl_findByName_partial" classname="DA1.DAOimplTest.UsersDAOimplTest" time="0.001">
     <system-out><![CDATA[value: DELETE FROM Users WHERE UserName = ?
 value: DELETE FROM Users WHERE UserName = ?
 ]]></system-out>

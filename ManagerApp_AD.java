@@ -3,11 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package DuAn1.ui;
-import DA1.DAOimpl.DepartmentImpl;
-import DA1.DAOimpl.MarksImpl;
-import DA1.DAOimpl.StudentsImpl;
-import DA1.DAOimpl.TeachersImpl;
-import DA1.DAOimpl.UsersDAOimpl;
+import DA1.DAOimplTest.DepartmentImpl;
+import DA1.DAOimplTest.MarksImpl;
+import DA1.DAOimplTest.StudentsImpl;
+import DA1.DAOimplTest.TeachersImpl;
+import DA1.DAOimplTest.UsersDAOimpl;
 import DA1.Entity.Departments;
 import DA1.Entity.Marks;
 import DA1.Entity.Students;

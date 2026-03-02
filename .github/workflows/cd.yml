@@ -3,28 +3,29 @@ name: Java CD Release
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
 
 jobs:
   build-release:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup JDK 21
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
+          java-version: '17'
           distribution: 'temurin'
-          java-version: '21'
 
-      - name: Build project
+      - name: Build with Maven
         run: mvn clean package -DskipTests
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: target/*.jar
+          files: |
+            target/*.jar
+            target/original-*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

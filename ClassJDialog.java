@@ -4,7 +4,7 @@
  */
 package DuAn1.ui;
 
-import DA1.DAOimpl.ClassImpl;
+import DA1.DAOimplTest.ClassImpl;
 import DA1.Entity.Classes;
 import java.util.List;
 import javax.swing.JTable;

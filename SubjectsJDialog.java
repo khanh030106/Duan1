@@ -4,8 +4,8 @@
  */
 package DuAn1.ui;
 
-import DA1.DAOimpl.MajorsImpl;
-import DA1.DAOimpl.SubjectsImpl;
+import DA1.DAOimplTest.MajorsImpl;
+import DA1.DAOimplTest.SubjectsImpl;
 import DA1.Entity.Subjects;
 import java.util.List;
 import javax.swing.JTable;

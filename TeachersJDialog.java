@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package DuAn1.ui;
-import DA1.DAOimpl.TeachersImpl;
+import DA1.DAOimplTest.TeachersImpl;
 import DA1.Entity.Teachers;
 import DA1.util.XDate;
 import DA1.util.XDialog;

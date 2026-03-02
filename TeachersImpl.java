@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package DA1.DAOimpl;
+package DA1.DAOimplTest;
 
 import DA1.Entity.Departments;
 import DA1.Entity.Teachers;

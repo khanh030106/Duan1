@@ -4,8 +4,8 @@
  */
 package DuAn1.ui;
 
-import DA1.DAOimpl.StudentsImpl;
-import DA1.DAOimpl.TeachersImpl;
+import DA1.DAOimplTest.StudentsImpl;
+import DA1.DAOimplTest.TeachersImpl;
 import DA1.Entity.Students;
 import DA1.util.XDate;
 import DA1.util.XDialog;

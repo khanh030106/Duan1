@@ -4,8 +4,8 @@
  */
 package DuAn1.ui;
 
-import DA1.DAOimpl.MarksImpl;
-import DA1.DAOimpl.StudentsImpl;
+import DA1.DAOimplTest.MarksImpl;
+import DA1.DAOimplTest.StudentsImpl;
 import DA1.Entity.Marks;
 import DA1.Entity.Students;
 import java.util.List;

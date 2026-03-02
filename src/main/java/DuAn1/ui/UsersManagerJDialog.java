@@ -1,6 +1,6 @@
 
 package DuAn1.ui;
-import DA1.DAOimpl.UsersDAOimpl;
+import DA1.DAOimplTest.UsersDAOimpl;
 import DA1.Entity.Users;
 import DA1.util.XDialog;
 import DA1.util.XImage;
@@ -8,7 +8,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
